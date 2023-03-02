@@ -1,0 +1,152 @@
+.title{
+	letter-spacing: 2px;
+	font-size:1.3rem;
+}
+.book-stand-div{
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content:center;
+	width:100%;
+}
+.book-stand{
+	/*max-width:290px;*/
+	/*min-width:23.6%;
+	min-height:48%;
+	max-width:calc(23.6% * 3);
+	max-height:calc(48% * ;3)*/
+	height:96vh;
+	width:50vh;
+	max-width:51vh;
+	max-height: 100vh;
+	/*overflow: hidden;*/
+}
+.book-stand .card-body{
+	overflow: hidden;
+}
+.book-stand .card-body img{
+	width:100%;
+	height:80%;
+	max-height:80%;
+}
+.book-stand .book-category{
+	overflow-x: auto;
+	height:20%;
+}
+.book-category::-webkit-scrollbar{
+	width:12px;
+}
+.book-category::-webkit-scrollbar-track{
+	background-color:orange;
+}
+
+.book-category::-webkit-scrollbar-thumb{
+	background-color:black;
+}
+.carousel-inner{
+	margin:auto;
+	width:70%;
+	min-height:12vh;
+	max-height:24vh;
+}
+.carousel-inner a{
+	display: inline-flex;
+	text-decoration:none;
+	padding:8px!important;
+	margin:10px;
+}
+/*# Mobile*/
+@media screen and (max-width: 480px){
+	.book-stand{
+		width:39vh;
+		height:70vh;
+	}
+	.card-head{
+		height:15%;
+		min-height:15%;
+		display:flex;
+		align-items:center;
+	}
+	.card-head span{
+		/*font-size:2rem;*/
+		width:100%;
+	}
+	.book-stand .card-body img{
+		width:100%;
+		height:80%;
+		max-height:80%;
+	}
+	.btn-category{
+		display:flex;
+		justify-content:center;
+		font-size:1rem;
+		margin-bottom:10px!important;
+	}
+	.carousel-father{
+		/*height:30%;*/
+	}
+
+	.carousel-inner{
+		max-height:22vh;
+		margin:auto;
+		max-width:80%;
+		display:flex;
+	}
+	.carousel-inner a{
+		text-decoration:none;
+		padding:5px!important;
+		margin:5px;
+	}
+	.carousel-item{
+		text-align: center;
+		transition:1.5s;
+	}
+	.title{
+		text-transform:uppercase;
+		font-size:1.6rem!important;
+	}
+	.carousel-control-prev, .carousel-control-next{
+		background-color:none;
+	}
+
+}
+
+/*# Others CELLPHONE*/
+@media screen and (max-width: 375px){
+	.book-stand-div{
+		margin:0!important;
+		padding:0!important;
+	}
+	.book-stand{
+		width:33.6vh;
+		height:64vh;
+	}
+	.book-category{
+		padding-top:0px!important;
+	}
+	.book-category .btn-category{
+		letter-spacing:2px;
+	}
+	.carousel-inner{
+		max-height:46vh;
+		width:80%;
+		margin:auto;
+	}
+	.carousel-item{
+		transition:1s;
+	}
+	.carousel-inner button{
+		max-height:20px;
+	}
+}
+@media screen and (max-width: 320px){
+	.book-stand{
+		width:100vh;
+		height:88vh;
+	}
+	.card-body .btn-category{
+		margin:0px 10px;
+	}
+	.carousel-inner{
+	    max-height:44vh;
+	}
+}
